@@ -8,20 +8,14 @@ class NetworkConstants {
 
         val OK = 200
 
-        val CD_AUTHORIZE_EMPTY = 4000
-        val CD_AUTHORIZE_MISSMATCH = 4001
-        val CD_AUTHORIZE_EXPIRE = 4002
-        val CD_AUTHORIZE_ERR = 4003
-        val CD_AUTHORIZE_ERR_PERMISSION = 3004
-        val CD_AUTHORIZE_ERR_TOKEN = 4005
-        val CD_MIS_PERSON_AUTHORIZE = 4008
-        val CD_CHANGED_TOKEN = 4010
-        val CD_ALREADY_BEEN_PAID = 8013
-        val CD_EXCEPTION = 9000
-        val CD_NET_ERR = 10000
-        val CD_BAD_GATEWAY = 502
-        val CD_NOT_FOUND = 404
-        val CD_TIME_OUT = 408
+        val SUCCESS_PUT = 201
+        val CHANGE_URI = 301
+        val WRONG_REQUEST = 400
+        val NO_AUTHORITY = 401
+        val WRONG_RESOURCE = 403
+        val NO_PAGE = 404
+        val WRONG_METHOD = 405
+        val SERVER_ERROR = 500
 
 
         /**

@@ -12,10 +12,6 @@ class Preference  {
 
     private var context: Context
 
-   // val uuid: String?
-       // get() = selectString(NetworkConstants.KEY_UUID)
-
-
     constructor(context: Context){
         this.context = context
 
