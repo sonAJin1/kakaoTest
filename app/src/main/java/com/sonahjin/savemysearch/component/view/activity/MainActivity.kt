@@ -189,9 +189,6 @@ class MainActivity : BaseActivity(), MainContract.View {
 
     }
 
-    override fun showBookmark() {
-
-    }
 
 
 

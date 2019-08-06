@@ -30,39 +30,4 @@ class ImageLoad{
         }
     }
 
-//    /**
-//     * 이미지 사이즈에 맞춰 View의 높이를 이미지 크기에 맞게 자동으로 변경
-//     * (View, LinearLayout 적용가능)
-//     * @param context
-//     * @param imageUrl
-//     * @param view
-//     */
-//    fun setAutoSizeView(context: Context, imageUrl: String, width:Int, height:Int, view: ImageView) {
-//
-//       // image url에 연결해서 이미지의 width, height를 받아온다.
-//        Glide.with(context)
-//            .load(imageUrl)
-//            .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-//            .into(object : SimpleTarget<GlideDrawable>() {
-//                override fun onResourceReady(
-//                    glideDrawable: GlideDrawable,
-//                    glideAnimation: GlideAnimation<in GlideDrawable>
-//                ) {
-//                    val imageHeight = glideDrawable.intrinsicHeight
-//                    val imageWidth = glideDrawable.intrinsicWidth
-//
-//                    // 파라미터로 받아온 width, height를 view에 적용한다.
-//                    val vto = view.viewTreeObserver
-//                    vto.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
-//                        override fun onGlobalLayout() {
-//                            view.viewTreeObserver.removeGlobalOnLayoutListener(this)
-//                            val width = view.measuredWidth
-//                            val height = width * imageHeight / imageWidth
-//
-//                            view.layoutParams = LinearLayout.LayoutParams(width, height)
-//                        }
-//                    })
-//                }
-//            })
-//    }
 }

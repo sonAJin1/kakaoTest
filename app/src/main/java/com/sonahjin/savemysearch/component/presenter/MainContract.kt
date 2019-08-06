@@ -13,8 +13,6 @@ interface MainContract {
 
         fun showImageDetail(image: ImageDocument)
 
-        fun showBookmark()
-
         fun setPageInfo(imageMeta: ImageMeta)
 
         fun showNoResult()

@@ -27,13 +27,6 @@ class MainImageAdapter(private val context: Context): RecyclerAdapter<ImageDocum
     override fun onBindViewHolder(holder: SetViewHolder, position: Int) {
 
         var item = getItem(position)!!
-
-//        holder.tvCollection.text = item.collection
-//        holder.tvDisplaySitename.text = item.displaySitename
-//        holder.tvDocUrl.text = item.docUrl
-//        holder.tvDateTime.text = item.dateTime
-
-
         ImageLoad().setImageResource(holder.ivImg,item.imageUrl,context.getDrawable(R.drawable.placeholder))
 
         holder.itemView.setOnClickListener { listener!!.onSelectImage(item)}
@@ -51,11 +44,6 @@ class MainImageAdapter(private val context: Context): RecyclerAdapter<ImageDocum
 
 
     class SetViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-
         val ivImg = view.iv_img
-//        val tvCollection = view.tv_collection
-//        val tvDisplaySitename = view.tv_display_sitename
-//        val tvDocUrl = view.tv_doc_url
-//        val tvDateTime = view.tv_date_time
     }
 }
