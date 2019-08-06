@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">손아진</string>
+    <string-array name="filter">
+        <item>@string/filter_recency</item>
+        <item>@string/filter_accuracy</item>
+    </string-array>
+    <string name="filter_recency">최신순</string>
+    <string name="filter_accuracy">정확도순</string>
+
+    <string name="search_hint">검색어 입력</string>
+    <string name="no_result">검색 결과가 없습니다</string>
+</resources>
