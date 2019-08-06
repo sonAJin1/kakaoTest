@@ -132,6 +132,10 @@ class MainActivity : BaseActivity(), MainContract.View {
             getString(R.string.filter_recency)-> this.mFilter = "recency"
             getString(R.string.filter_accuracy)-> this.mFilter = "accuracy"
         }
+
+        mImageAdapter.removeAll()
+        mCurrentPage = 1
+        mPresenter.loadImageList(mKeyword,mFilter,mCurrentPage)
     }
 
     private fun selectSpinnerListener(){
